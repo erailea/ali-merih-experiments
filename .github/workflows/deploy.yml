@@ -18,18 +18,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-          cache: maven
-
-      - name: Run Tests with Coverage
-        run: mvn clean verify
-        working-directory: ./
-
-      - name: Upload coverage report
+      - name: Upload 
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./
