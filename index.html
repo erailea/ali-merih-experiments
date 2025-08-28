@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Experiments</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: #f7f9fc;
+      color: #1f2937;
+      min-height: 100svh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+    header, footer { padding: 16px 20px; }
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      background: #ffffff;
+    }
+    h1 { font-size: 20px; margin: 0; }
+    main { padding: 20px; display: grid; gap: 16px; max-width: 920px; margin: 0 auto; }
+    .card {
+      display: grid;
+      gap: 10px;
+      padding: 16px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+    }
+    a.card { color: inherit; text-decoration: none; }
+    .card h2 { margin: 0; font-size: 16px; }
+    .card p { margin: 0; color: #6b7280; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Interactive Experiments</h1>
+  </header>
+  <main>
+    <div class="grid">
+      <a class="card" href="./candle-jar.html">
+        <h2>Water-Rising Candle</h2>
+        <p>Candles under a jar; water rises inside as oxygen is consumed.</p>
+      </a>
+      <a class="card" href="./soft‑body-canvas.html">
+        <h2>Soft Body Canvas</h2>
+        <p>Play with a soft-body mesh and watch it wobble.</p>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <span style="color:#9aa6b2; font-size:12px;">Tip: Bookmark this index for quick access.</span>
+  </footer>
+</body>
+</html>
+
+
