@@ -1,4 +1,4 @@
-name: Test Coverage
+name: Deploy
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch: 
 
 jobs:
-  coverage:
+  deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: read
